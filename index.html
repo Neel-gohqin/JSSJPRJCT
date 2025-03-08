@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Logo</h1>
+        <ul>
+          <li>Home</li>
+          <li>services</li>
+          <li>Contact'Us</li>
+          <li>About'Us</li>
+        </ul>
+        <p>Username</p>
+      </nav>
+    </header>
+
+    <main>
+      <section class="secOut">
+        <!-- Main Outer -->
+
+        <section class="secin">
+          <!-- Inner Outer -->
+
+
+          <!-- LeftSection -->
+          <div class="leftsec">
+
+
+              <!-- LeftUpperSection -->
+            <div class="leftup">
+              <div class="aditm">
+                <h1>Added items</h1>
+
+                <span class="spn1">
+                  <p>S.No Service Name</p>
+                  <p>Price</p>
+                </span>
+
+                <div class="ittno">
+                  <ol id="lisitint"></ol>
+
+                  <div class="boxig">
+                    <img
+                      src="icons8-info-150.png"
+                      alt="img"
+                      width="34"
+                      height="34"
+                    />
+                    <h3>No Items Added</h3>
+                    <p class="p2p">
+                      Add items to the cart from the services bar
+                    </p>
+                  </div>
+                </div>
+
+                <span class="spn2">
+                  <h2>Total Amount</h2>
+                  <span id="TToalAmt"></span>
+                </span>
+              </div>
+            </div>
+
+
+            <!-- leftDown Section-->
+            <div class="lfttdwn lftdwn-deg-rem leftDown">
+              <div class="aditm2">
+                <form action="#1">
+                  <h2>Book Now</h2>
+
+                  <div class="inp1">
+                    <label for="spn">Full Name</label>
+                    <input
+                      type="text"
+                      id="spn"
+                      placeholder="John doe"
+                      class="spn"
+                    />
+                  </div>
+
+                  <div class="it2head">
+                    <span>
+                      <label for="spn2">Email</label>
+                      <input
+                        type="email"
+                        id="spn2"
+                        class="spn"
+                        placeholder="John doe@emaple.com"
+                      />
+                    </span>
+
+                    <span>
+                      <label for="spn3">Phone Number</label>
+                      <input
+                        type="tel"
+                        id="spn3"
+                        class="spn"
+                        placeholder="John doe"
+                      />
+                    </span>
+                  </div>
+
+                  <button id="BtnBookIt" onclick="check()">Book Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+          <!-- Right Section -->
+          <div class="rghtsec">
+              
+              <!-- Right UpperSection -->
+
+            <div class="rghtup">
+              <h1>Browse Our services</h1>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+
+             <!-- Righr LowerSec -->
+            <div class="rlowsec">
+              <div class="aditmrlow">
+                <div class="itemssec">
+                  <div class="igmsec">
+                    <div class="iggpdct" id="iggpdct"></div>
+
+                    <div class="img-price-service-headBx">
+                      <span id="serviceheadr"> </span>
+
+                      <span id="serVicePriceHd"> </span>
+                    </div>
+                  </div>
+
+                  <div class="skpnxt">
+                    <button id="btnsk1">Skip Item</button>
+                    <button id="btnAdItm" onclick="checking()">Additem</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span> ! Add Items in the List </span>
+          </div>
+
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
