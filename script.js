@@ -70,36 +70,37 @@ serVicePriceHd.appendChild(serviceparaPrice);
 
 
 
-
 const check = () => {
   let addmsge = document.getElementsByClassName("aditm2")[0];
-  let lisitint = document.getElementById("lisitint"); ///Getting List Box
+  let lisitint = document.getElementById("lisitint"); /// Getting List Box
+  let dfITPRICE = document.getElementById("TToalAmt");/// Ensure dfITPRICE exists
 
-  // Ensure a <p> element exists or create one
   let existMessage = document.querySelector(".aditm2 p");
-  if (!existMessage) {
-    existMessage = document.createElement("p");
-  }
+
   if (lisitint.children.length === 0) {
-    existMessage.innerText = "Please add Item First";
-    existMessage.style.border = '1px solid #232';
-    addmsge.appendChild(existMessage);
-  } 
-  else if(lisitint.children.length > 0){
+    // If no items exist, create or update the message
+    if (!existMessage) {
+      existMessage = document.createElement("p");
+      existMessage.innerText = "Please add Item First";
+      existMessage.style.border = "1px solid #232";
+      addmsge.appendChild(existMessage);
+    }
+  } else {
+    // If items exist and check2() is valid
     if (check2()) {
-
+      if (!existMessage) {
+        existMessage = document.createElement("p");
+        addmsge.appendChild(existMessage);
+      }
       existMessage.innerText = "Thnx for order";
-      existMessage.style.border = '1px solid #232';
-      existMessage.style.transition=('')
-
+      existMessage.style.border = "1px solid #232";
       dfITPRICE.innerText = "$0.00";
-      
-      addmsge.appendChild(existMessage);          
-    } 
+      setTimeout(()=>{
+        location.reload()
+      },2000)
+    }
   }
 };
-
-
 
 const check2 = () => {
   const name = document.getElementById("spn").value.trim();
@@ -114,9 +115,10 @@ const check2 = () => {
     alert("Please enter a valid email.");
     return false;
   }
-  
+
   return true;
 };
+
 
 
 
@@ -182,6 +184,8 @@ AddItmBttn.addEventListener("click", () => {
 
   // Get the selected item
   let selectedItem = imgcolllec[crntidx];
+  
+  
   // Create a new row
   let newRow = document.createElement("li");
   newRow.classList.add("liDesgn");

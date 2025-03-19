@@ -259,6 +259,7 @@ main{
 .liDesgn{
     width: 100%;
     height: 24px;
+    border: 1px solid #000;
     display: flex;
     justify-content: space-between;
     padding: 0px 6px 0px 50px ;
@@ -268,4 +269,7 @@ main{
 .img-price-service-headBx{
     display: flex;
     justify-content:  space-between;
+}
+.ittno ol{
+    list-style-type: decimal;
 }
