@@ -101,7 +101,6 @@ const check = () => {
     }
   }
 };
-
 const check2 = () => {
   const name = document.getElementById("spn").value.trim();
   const email = document.getElementById("spn2").value.trim();
@@ -168,12 +167,15 @@ bntsk1.addEventListener("click", () => {
  
 //Adding Items in Cart
 let lisitint = document.getElementById("lisitint"); ///Getting List Box
+   lisitint.style = 'list-style-position: inside';
+   
+
 let AddItmBttn = document.getElementById("btnAdItm");
 let boxig = document.querySelector(".boxig");
 
 AddItmBttn.addEventListener("click", () => {
   if (lisitint.children.length >= 5) {
-    //It will Check First The List Size
+    //It will Check First check The List Size
     alert("You can't add more than 5 items!");
     return;
   }
@@ -190,22 +192,32 @@ AddItmBttn.addEventListener("click", () => {
   let newRow = document.createElement("li");
   newRow.classList.add("liDesgn");
 
-  let serviceName = document.createElement("p");
-  serviceName.innerText = selectedItem.serviceName;
+  //createiing listing items
+  let listline = document.createElement("p");
+listline.classList.add("listdesign")
 
-  let price = document.createElement("p");
-  price.innerText = selectedItem.Price;
+//creating service name price sec
+let serviceName = document.createElement("span");
+serviceName.innerText = selectedItem.serviceName;
 
-  newRow.appendChild(serviceName);
-  newRow.appendChild(price);
-  lisitint.appendChild(newRow);
+let serviceprice = document.createElement("span");
+serviceprice.innerText = selectedItem.Price;
+
+//appending serviceNamePrice in p listing  
+listline.appendChild(serviceName)
+listline.appendChild(serviceprice)
+
+//appending  liting p in li 
+newRow.appendChild(listline);
+//appending li new row in ol list
+lisitint.appendChild(newRow);
 
   // Check if the 'addmsge' element contains a <p> and remove it
   let addmsge = document.getElementsByClassName("aditm2")[0];
   let existingMessage = addmsge.querySelector("p");
   if (existingMessage) {
     addmsge.removeChild(existingMessage);
-  } //else return from block
+  } //else return from block  and adding items
 
   let priceValue = parseFloat(selectedItem.Price.replace("$", ""));
   totalPr += priceValue;

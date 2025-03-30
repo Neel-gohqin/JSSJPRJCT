@@ -48,6 +48,7 @@ main{
     
 }
 .secOut{
+    border: 1px solid #000;
     width: 100%;
     height: 100vh;
 }
@@ -57,8 +58,9 @@ main{
     align-items: center;
     gap: 10px;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding-bottom: 10px;
+    border: 1px solid #000;
 }
 .leftsec{
     width: 32vw;
@@ -256,20 +258,25 @@ main{
     background-color: rgb(190, 240, 190) ;
 }
 
+
 .liDesgn{
     width: 100%;
     height: 24px;
-    border: 1px solid #000;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 6px 0px 50px ;
     border-top: 0.5px solid rgb(176, 169, 169);
     font-size: 0.8rem;
+    padding-left: 14px;
+    padding-top: 2px;
 }
 .img-price-service-headBx{
     display: flex;
-    justify-content:  space-between;
+    justify-content: space-between;
 }
-.ittno ol{
-    list-style-type: decimal;
+.listdesign{
+    position: relative;
+    top: -20px;
+    width: 100%;
+    padding-left: 30px;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
 }
