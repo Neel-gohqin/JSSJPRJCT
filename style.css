@@ -106,14 +106,13 @@ main{
 .rlowsec{
     padding: 0px;
     height: 80vh;
-    border: 1px solid #000;
 }
 .aditmrlow{
     width: 100%;
-    border: 1px solid #000;
+    border-radius:20px;
     height: 100%;
     border-top: 1px solid rgb(194, 190, 190);
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .aditm h1{
@@ -230,7 +229,7 @@ main{
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
-    padding: 4px;
+    padding: 6px;
 }
 
 .skpnxt{
@@ -279,4 +278,7 @@ main{
     height: 100%;
     justify-content: space-between;
     display: flex;
+}
+.lstspn{
+    padding-bottom: 12px;
 }

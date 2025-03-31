@@ -129,12 +129,6 @@ const check2 = () => {
 
 
 
-
-
-
-
-
-
 let bntsk1 = document.getElementById("btnsk1"); //SkiP Button element
 let crntidx = 0; //set to default 0 index for skip button
 
@@ -155,9 +149,6 @@ bntsk1.addEventListener("click", () => {
     serviceparaPrice.innerText = imgcolllec[crntidx].Price; // Update service Price
   }
 });
-
-
-
 
 
 
