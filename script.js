@@ -46,6 +46,7 @@ const imgcolllec = [
 
 
 
+
 let iggpdct = document.getElementById("iggpdct");
 let iggpdctImg = document.createElement("img");
 iggpdctImg.src = imgcolllec[0].src; // setting default image from arrray
@@ -70,6 +71,8 @@ serVicePriceHd.appendChild(serviceparaPrice);
 
 
 
+
+
 const check = () => {
   let addmsge = document.getElementsByClassName("aditm2")[0];
   let lisitint = document.getElementById("lisitint"); /// Getting List Box
@@ -77,27 +80,40 @@ const check = () => {
 
   let existMessage = document.querySelector(".aditm2 p");
 
+  if (!existMessage) {
+    let rightsec =document.getElementById('rightsec')
+    let leftsec =document.getElementById('leftsec')
+    existMessage = document.createElement("p");
+    existMessage.style.opacity = "0";
+    existMessage.style.transition = "opacity 1.1s ease";  
+    addmsge.appendChild(existMessage);
+    
+    leftsec.style.height='82vh'
+    leftsec.style.transition="height 0.4s ease"
+    rightsec.style.height='82vh'
+    rightsec.style.transition="height 0.4s ease"
+
+
+    // Trigger reflow to ensure transition applies
+    void existMessage.offsetWidth;
+    existMessage.style.opacity = "1";
+  }
+  
+
   if (lisitint.children.length === 0) {
     // If no items exist, create or update the message
-    if (!existMessage) {
-      existMessage = document.createElement("p");
-      existMessage.innerText = "Please add Item First";
-      existMessage.style.border = "1px solid #232";
-      addmsge.appendChild(existMessage);
-    }
-  } else {
+    existMessage.innerText = "Please add Item First";  
+    existMessage.style.opacity = "1";
+  } 
+  else {
     // If items exist and check2() is valid
     if (check2()) {
-      if (!existMessage) {
-        existMessage = document.createElement("p");
-        addmsge.appendChild(existMessage);
-      }
       existMessage.innerText = "Thnx for order";
-      existMessage.style.border = "1px solid #232";
+      existMessage.style.opacity = "1";
       dfITPRICE.innerText = "$0.00";
       setTimeout(()=>{
         location.reload()
-      },2000)
+      },2500)
     }
   }
 };

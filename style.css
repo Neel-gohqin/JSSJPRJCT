@@ -27,8 +27,10 @@ nav h1{
     font-size: 1.6rem;
 }
 nav p{
-    font-size: 1rem;
-    padding: 4px;
+    width: auto;
+    height: auto;
+    font-size: 0.8rem;
+    padding: 8px;
     border-radius: 14px;
     background-color: rgb(142, 142, 171);
     cursor: pointer;
@@ -39,6 +41,7 @@ nav ul{
     list-style: none;
     gap: 26px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 main{
@@ -48,7 +51,6 @@ main{
     
 }
 .secOut{
-    border: 1px solid #000;
     width: 100%;
     height: 100vh;
 }
@@ -60,7 +62,6 @@ main{
     width: 100%;
     height: 90vh;
     padding-bottom: 10px;
-    border: 1px solid #000;
 }
 .leftsec{
     width: 32vw;
@@ -71,18 +72,19 @@ main{
     gap: 6px;
     font-family: poppins;
     font-weight: 400;
+    border-radius: 16px; 
 }
 .leftup, .lfttdwn{
     border-radius: 16px;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height:100%;
-    
+    transition: height 1s ease;
 }
 
 .rghtsec{
-    height: 80vh;
     width: 32vw;
+    height: 80vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -92,7 +94,6 @@ main{
 }
 
 .rghtup{
-    
     padding: 6px 10px 0px 10px;
     border-radius: 16px; 
     font-family: poppins;
@@ -105,8 +106,8 @@ main{
 }
 .rlowsec{
     padding: 0px;
-    height: 80vh;
-}
+    height: 100%;
+    }
 .aditmrlow{
     width: 100%;
     border-radius:20px;
@@ -132,7 +133,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 4px;  
- padding: 10px 10px 16px 10px;
+ padding: 10px 10px 10px 10px;
 
 }
 .aditm2 form{
@@ -253,7 +254,7 @@ main{
     height: 38px;
     cursor: pointer;
     border: none;
-    color: rgb(65, 171, 65);
+        color: rgb(65, 171, 65);
     background-color: rgb(190, 240, 190) ;
 }
 
@@ -280,5 +281,5 @@ main{
     display: flex;
 }
 .lstspn{
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
