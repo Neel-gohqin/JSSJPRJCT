@@ -1,0 +1,263 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+:root{
+    --defaultfontStyle:red; 
+}
+/* NAV */
+.navFone{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px ; 
+}
+.listing{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 38px;
+    list-style: none;
+    align-items: center;
+}
+.listing li,a{
+    font-size: 1.1rem ;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+/* NAV LOGOS*/
+.rLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    min-width: 100px;
+    min-height: auto;
+    background-color: #d1e3f3;
+    color: #308CD6;
+    cursor: pointer;
+}
+.lLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-weight: 550;
+    font-size: 1.4rem;
+    color:var(--defaultfontStyle);
+    cursor: pointer;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Main body Section One */
+
+.sectionOne{
+    width: 100%;
+    height: 90vh;
+    padding-top: 18px;
+    
+}
+.sectionTwo{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #000;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SeconeInner{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+
+
+
+/* Section One Leftside Design */
+
+.leftSecF{
+    padding: 12px 50px 44px 50px;
+    width: 50%;      
+    min-height: 400px;
+
+}
+
+.leftSecF h1{
+    width: 80%;
+    font-size: 3rem;
+}
+.leftSecF .bluetext{
+    color: #308CD6 ;
+    
+}
+.leftSecF p{
+    font-size: 1.1rem;
+    padding: 10px 0px 22px 0px;
+    line-height:1.4em;
+}
+.leftSecF button{
+    min-width: 244px;
+    min-height: 54px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    color:white;
+    background-color: #308CD6 ;
+    font-weight: 550;
+}
+
+
+
+
+/* section one rightSide Design */
+
+.rightSecF{
+    width: 50%;
+    min-height: 400px;
+    padding: 12px 40px 12px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightSecF img{
+    width: 320px;
+    height: 280px;
+}
+
+.showcase{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:110px;
+    background-color: #308CD6 ;
+
+}
+.showHeader{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 22px 0px 22px 50px;
+    font-size: 1.8rem;
+}
+.showCasReview{
+    width: 50%;
+    height: auto;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 50px;
+    
+    }
+.RvtittleBx{
+    border: 1px solid #000;
+}
+.RvtittleBx h1{
+    padding: 4px;
+    font-weight: 2000;
+}
+
+.RvtittleBx{
+    padding: 4px;
+    font-weight: 550;
+}
+
+
+.sectionTwoInner{
+    display: flex;
+    width: 80%;
+    height: 80%;
+border: 1px solid #000;
+}
+.Sec2Left,.Sec2Right{
+    width: 50%;
+    border: 1px solid #000;
+}
+.sec2LfHeadb{
+    border: 1px solid #000;
+    padding: 12px;
+    height: 80px;
+    text-align: left;
+    width: 100%;
+}
+.PriceDsplaySec2,.UserAcCollection{
+    border: 1px solid #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+.PdS2Headrr{
+    border: 1px solid #2d0de2;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+.Sec2RghtserviceBar{
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 12px;
+    background-color: #c9e3f9 ;
+
+}
+
+.Sec2RghtserviceBar span{
+    padding-left: 12px;
+}
+.DisplayServices{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #0eda41;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.PriceShowFtbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 12px 6px 12px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #cd0e0e;
+}
+
+
+
+
+
+@media screen and (min-width:1294px) {
+    .sectionOne{
+        height: 100vh;
+    border: 5px solid #000;
+        
+    }
+    .SeconeInner{
+        height: 76vh;
+    }
+}
