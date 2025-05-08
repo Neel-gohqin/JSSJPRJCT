@@ -66,17 +66,9 @@ main{
 
 .sectionOne{
     width: 100%;
-    height: 90vh;
-    padding-top: 18px;
-    
-}
-.sectionTwo{
-    width: 100%;
     height: 100vh;
-    border: 1px solid #000;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 30px;
+    
 }
 .SeconeInner{
     display: flex;
@@ -111,16 +103,24 @@ main{
     line-height:1.4em;
 }
 .leftSecF button{
-    min-width: 244px;
-    min-height: 54px;
+    min-width: 242px;
+    min-height: 56px;
     border-radius: 12px;
     cursor: pointer;
     border: none;
     color:white;
     background-color: #308CD6 ;
     font-weight: 550;
-}
+    animation: scale  1.4s ease infinite alternate-reverse;
 
+
+}
+@keyframes scale {
+    from{
+        transform: scale(1.1);
+    }
+
+}
 
 
 
@@ -129,7 +129,7 @@ main{
 .rightSecF{
     width: 50%;
     min-height: 400px;
-    padding: 12px 40px 12px 26px;
+    padding: 12px 10px 12px 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +143,7 @@ main{
     display: flex;
     justify-content: center;
     width: 100%;
-    height:110px;
+    height:100px;
     background-color: #308CD6 ;
 
 }
@@ -178,24 +178,40 @@ main{
     font-weight: 550;
 }
 
+/* -Main Body Section Two --> */
 
+.sectionTwo{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #000;    
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
 .sectionTwoInner{
     display: flex;
     width: 80%;
     height: 80%;
-border: 1px solid #000;
 }
+
+/* Main body section two LeftSec  */
 .Sec2Left,.Sec2Right{
     width: 50%;
-    border: 1px solid #000;
+    height: 90vh;
+    border: 2px solid #3bbb11;
 }
 .sec2LfHeadb{
     border: 1px solid #000;
     padding: 12px;
-    height: 80px;
+    height: 70px;
     text-align: left;
     width: 100%;
 }
+.headlinefttr{
+    padding: 12px;
+}
+/* Main body section twoRightSec  */
+
 .PriceDsplaySec2,.UserAcCollection{
     border: 1px solid #000;
     width: 100%;
@@ -204,11 +220,27 @@ border: 1px solid #000;
     height: 50%;
     justify-content: space-between;
 }
+
+
+.usserInfoColInner{
+    padding-bottom: 8px;
+}
+.usserInfoColInner h1{
+    padding: 8px;
+
+}
+
+.UserAcCollection button{
+    width: 100%;
+    height: 46px;
+    border-radius: 12px;
+    background-color: #aed2f4;
+}
 .PdS2Headrr{
     border: 1px solid #2d0de2;
     text-align: center;
     width: 100%;
-    height: 80px;
+    height: 70px;
 
     padding-top: 10px;
     display: flex;
@@ -246,12 +278,133 @@ border: 1px solid #000;
     height: auto;
     border: 1px solid #cd0e0e;
 }
+.UsrFlBOX{
+    width: 100%;
+    height:80px;
+    border: 1px solid #000;
+    padding: 6px;
+}
+.UsrFlBOX #USerId{
+    width: 100%;
+    height: 2.6rem;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+}
+.UsrFlBOX .labelsUsr{
+    padding: 2px    2px 2px 2px;
+    border: 1px solid #000;
+}
+.UsrFlBOXTw .labelsUsrTw{
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #000;
+}
+.UsrFlBOXTw{
+    display: flex;
+    width: 100%;
+    height:80px;
+    border: 1px solid #000;
+    gap: 2px;
+}
+
+.Usrflw_InputBox1,.Usrflw_InputBox2{
+    border: 1px solid #000;
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    display: flex;
+    gap: 2px;
+    flex-direction: column  ;
+    
+}
+.UsrFlBOXTw #UsrNidF2{
+    
+    width: 100%;
+    height: 2.6rem;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.SecTwo_leftSec_ITEMshow{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+    display: flex;
+    padding-bottom: 18px;
+    flex-direction: column;
+}
+.secTwoLFtSecItmShowINNBOX{
+    width: 100%;
+    height: 20%;
+    display:flex;
+}
+.servicesL{
+    border: 1px solid #006e9d;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    font-size: 0.9rem;
+
+}
+.servicesL img{
+
+    width: 22x;
+    height: 22  px;
+    border: 1px solid #000;
+}
+.servicesL span{
+    width: auto;
+    border-radius: 12px;
+    height: auto;
+    padding: 2px;
+    font-size: 1rem;
+    font-weight: 550;
+    color: #0d5b84;
+    border: 1px solid #000;
+}
+
+.servicesL2{
+    text-align: right;
+    border: 1px solid #000;
+    display: flex;
+    border: 1px solid #8fde19;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 30px;
+    width: 40%;
+    height: 100%;
+}
+.servicesL2 span{
+    border: 1px solid #0384b3;
+    border-radius: 12px;
+    width: auto;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+    font-size: 0.8rem;
+}
+
+.servicesL button{
+    width: 34px;
+    height: 24px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
 
 
-
-
-
-@media screen and (min-width:1294px) {
+/* @media screen and (min-width:1294px) {
     .sectionOne{
         height: 100vh;
     border: 5px solid #000;
@@ -260,4 +413,4 @@ border: 1px solid #000;
     .SeconeInner{
         height: 76vh;
     }
-}
+} */
