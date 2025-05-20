@@ -5,10 +5,9 @@ Sbtn.addEventListener("click", () => {
   // window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 });
 
+
 const input1Fld = document.getElementById("USerId");
 let DisplayItemAddcart = document.getElementById("DisplayItemsAdd");
-
-
 
 input1Fld.addEventListener('click', () => {
 
@@ -17,7 +16,10 @@ input1Fld.addEventListener('click', () => {
     DisplayItemAddcart.removeChild(span)
         //getting all span and remove
      })
-    let listItem = DisplayItemAddcart.document.createElemt('ul');
+
+      
+    const CartList = DisplayItemAddcart.querySelector('ul'); 
+   
 });
 
 
