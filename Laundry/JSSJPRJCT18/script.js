@@ -7,29 +7,30 @@ Sbtn.addEventListener("click", () => {
 
 
 const input1Fld = document.getElementById("USerId");
-let DisplayItemAddcart = document.getElementById("DisplayItemsAdd");
+let DisplayItemAddcart = document.getElementById("DisplayItemAddcart");
+let Sec2Right = document.querySelector('.Sec2Right')
+const CartList = Sec2Right.querySelector('ul'); 
+let popup = document.createElement('span')
 
 input1Fld.addEventListener('click', () => {
 
-    DisplayItemAddcart.removeChild(DisplayItemAddcart.querySelector("img")) //remove image
-    DisplayItemAddcart.querySelectorAll("span").forEach(span =>{        
-    DisplayItemAddcart.removeChild(span)
-        //getting all span and remove
-     })
-
-      
-    const CartList = DisplayItemAddcart.querySelector('ul'); 
+    if(CartList){
+       DisplayItemAddcart.removeChild(DisplayItemAddcart.querySelector("img")) //remove image
+       DisplayItemAddcart.querySelectorAll("span").forEach(span =>{        
+       DisplayItemAddcart.removeChild(span)  
+      })
+    }
+    else{
+      popup.innerText='Add items'
+      popup.classList.add("popUp")
+      Sec2Right.appendChild(popup)
+    }
    
 });
 
 
+let Fn = ()=>{
+  const listNg_Items = document.createElement('ul')
+} 
  
 
-// let arr = [ 1, 2,3,4,5,6,7,8,9,10,11];
-//  arr.filter((n)=>{
-//     if(n>8){
-//         return true
-//     }
-//     return false
-// }),
-// console.log(arr);
