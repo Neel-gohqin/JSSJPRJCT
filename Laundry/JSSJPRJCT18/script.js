@@ -8,9 +8,13 @@ Sbtn.addEventListener("click", () => {
 
 const input1Fld = document.getElementById("USerId");
 let DisplayItemAddcart = document.getElementById("DisplayItemAddcart");
-let Sec2Right = document.querySelector('.Sec2Right')
-const CartList = Sec2Right.querySelector('ul'); 
+let UserAcCollection = document.querySelector('.UserAcCollection')
+const CartList = UserAcCollection.querySelector('ul'); 
 let popup = document.createElement('span')
+  popup.classList.add("popUp")
+  popup.innerText='Add the items to the cart to Book'
+  popup.style.opacity='0'
+  UserAcCollection.style.paddingBottom = '12px';
 
 input1Fld.addEventListener('click', () => {
 
@@ -21,16 +25,32 @@ input1Fld.addEventListener('click', () => {
       })
     }
     else{
-      popup.innerText='Add items'
-      popup.classList.add("popUp")
-      Sec2Right.appendChild(popup)
+
+      UserAcCollection.appendChild(popup)
+      
+      requestAnimationFrame(()=>{
+      popup.style.transition='opacity 0.4s ease'
+      UserAcCollection.style.transition='padding-Bottom 0.4s ease'
+
+      UserAcCollection.style.paddingBottom = '0px';
+        popup.style.opacity='1' 
+
+        
+      })
     }
    
 });
 
 
-let Fn = ()=>{
-  const listNg_Items = document.createElement('ul')
-} 
- 
+let Items = document.querySelectorAll('.secTwoLFtSecItmShowINNBOX p:nth-of-type(2)')
 
+
+Items.forEach(Item=>{
+
+    Item.addEventListener('click',()=>{
+      return console.log("typed")    
+    })})
+    
+
+
+  

@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-:root{
-    --defaultfontStyle:red; 
+
+:root {
+    --defaultfontStyle: red;
 }
+
 /* NAV */
-.navFone{
+.navFone {
     display: flex;
     width: 100%;
     height: 10vh;
     justify-content: space-between;
-    padding: 10px 50px 10px 50px ; 
+    padding: 10px 50px 10px 50px;
 }
-.listing{
+
+.listing {
     display: flex;
     justify-content: space-between;
     column-gap: 38px;
     list-style: none;
     align-items: center;
 }
-.listing li,a{
-    font-size: 1.1rem ;
+
+.listing li,
+a {
+    font-size: 1.1rem;
     font-family: poppins;
     text-decoration: none;
     color: black;
@@ -34,8 +39,9 @@
     outline: none;
 
 }
+
 /* NAV LOGOS*/
-.rLogo{
+.rLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +56,8 @@
     color: #308CD6;
     cursor: pointer;
 }
-.lLogo{
+
+.lLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,24 +65,25 @@
     font-weight: 550;
     font-size: 1.4rem;
     font-family: poppins;
-    color:var(--defaultfontStyle);
+    color: var(--defaultfontStyle);
     cursor: pointer;
 }
 
 
-main{
+main {
     width: 100%;
     height: 100vh;
 }
 
 /* Main body Section One */
 
-.sectionOne{
+.sectionOne {
     width: 100%;
     height: 100vh;
-    
+
 }
-.SeconeInner{
+
+.SeconeInner {
     display: flex;
     width: 100%;
     height: auto;
@@ -90,47 +98,51 @@ main{
 
 /* Section One Leftside Design */
 
-.leftSecF{
+.leftSecF {
     padding: 12px 50px 44px 50px;
-    width: 50%;      
+    width: 50%;
     min-height: 100%;
     border: 1px solid #000;
 }
 
-.leftSecF h1{
+.leftSecF h1 {
     width: 80%;
     font-size: 2.6rem;
-    line-height:1.4em;
+    line-height: 1.4em;
     font-family: poppins;
 
 }
-.leftSecF .bluetext{
-    color: #308CD6 ;
-    
+
+.leftSecF .bluetext {
+    color: #308CD6;
+
 }
-.leftSecF p{
+
+.leftSecF p {
     font-size: 1rem;
-    padding:12px 0px 26px 0px;
-    line-height:1.5em;
+    padding: 12px 0px 26px 0px;
+    line-height: 1.5em;
     letter-spacing: 2px;
     font-family: poppins;
 }
-.leftSecF button{
+
+.leftSecF button {
     min-width: 242px;
     min-height: 56px;
     border-radius: 12px;
     cursor: pointer;
     border: none;
-    color:white;
-    background-color: #308CD6 ;
+    color: white;
+    background-color: #308CD6;
     font-weight: 500;
-        font-family: poppins;
-    animation: scale  1.4s ease infinite alternate-reverse;
-    
+    font-family: poppins;
+    animation: scale 1.4s ease infinite alternate-reverse;
+
 
 }
+
 @keyframes scale {
-    from{
+    from {
         transform: scale(1.1);
     }
 
@@ -140,7 +152,7 @@ main{
 
 /* section one rightSide Design */
 
-.rightSecF{
+.rightSecF {
     width: 50%;
     min-height: 100%;
     padding: 12px 10px 12px 26px;
@@ -149,20 +161,22 @@ main{
     align-items: center;
     border: 1px solid #000;
 }
-.rightSecF img{
+
+.rightSecF img {
     width: 320px;
     height: 280px;
 }
 
-.showcase{
+.showcase {
     display: flex;
     justify-content: center;
     width: 100%;
-    height:100px;
-    background-color: #308CD6 ;
+    height: 100px;
+    background-color: #308CD6;
 
 }
-.showHeader{
+
+.showHeader {
     width: 50%;
     height: auto;
     display: flex;
@@ -172,28 +186,30 @@ main{
     font-size: 1.6rem;
     font-family: poppins;
 }
-.showCasReview{
+
+.showCasReview {
     width: 50%;
     height: auto;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding-right: 50px;
-    border:  1px solid #000;
+    border: 1px solid #000;
     font-family: poppins;
 }
-.RvtittleBx h1{
+
+.RvtittleBx h1 {
     font-weight: 600;
 }
 
-.RvtittleBx{
+.RvtittleBx {
     padding: 4px;
     font-weight: 520;
 }
 
 /* -Main Body Section Two --> */
 
-.sectionTwo{
+.sectionTwo {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -203,59 +219,80 @@ main{
     border: 1px solid #000;
     padding-bottom: 30px;
     background-color: #c5cdd5;
-    
+
 }
-.sectionTwoInner{
+
+.sectionTwoInner {
     display: flex;
     width: 80%;
     height: auto;
     gap: 6px;
-    padding-bottom: 5px;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000;
 
 
 }
 
 /* Main body section two LeftSec  */
-.Sec2Left{
-    width:45%; 
+.Sec2Left {
+    width: 45%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 8px;
-    height: 90vh;
+    row-gap: 2px;
     /* border: 0.5px solid #474a46; */
-     border-radius: 12px;
+    border-radius: 12px;
     background-color: rgb(234, 238, 243);
-    
+    border: 1px solid #000;
 }
-.Sec2Right{
-    /* padding: 0px 0px 8px 0px; */
-    width:45%; 
+
+.lowBox {
+    width: 100%;
+    height: auto;
+    padding-top: 12px;
+    padding-left: 10px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #000;
+
+    font-family: poppins;
+}
+
+.lowBox .headlinefttr {
+    font-size: 0.8rem;
+    font-weight: 580;
+    color: #0d5b84;
+    border: 1px solid #000;
+
+}
+
+.Sec2Right {
+
+    width: 45%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    height: 90vh;
     border-radius: 12px;
+    border: 1px solid #000;
     background-color: transparent;
-    border: 1px solid #000; 
-    
+
 }
-.sec2LfHeadb{
+
+.sec2LfHeadb {
     padding: 10px 0px 10px 14px;
     height: 70px;
     text-align: left;
-    width: 100%;    
-}
-.headlinefttr{
-    padding: 6px 6px 6px 10px;
     width: 100%;
-    height: 50px;
 }
+
 /* Main body section twoRightSec  */
 
-.PriceDsplaySec2{ 
+.PriceDsplaySec2 {
     /* border: 0.5px solid #000; */
     width: 100%;
     display: flex;
@@ -263,41 +300,41 @@ main{
     height: 50%;
     border-radius: 12px;
     justify-content: space-between;
-     background-color: rgb(234, 238, 243);
-   
+    background-color: rgb(234, 238, 243);
+
 }
-.UserAcCollection{
-     background-color: rgb(234, 238, 243); 
+
+.UserAcCollection {
+    background-color: rgb(234, 238, 243);
     /* border: 0.5px solid #000; */
     width: 100%;
-    display: flex;
-    flex-direction: column;
     height: 50%;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
     border-radius: 12px;
     justify-content: space-between;
-    padding: 6px 6px 8px 6px;
-
+    padding: 10px 10px 12px 10px;
 }
 
 
-.usserInfoColInner{
-    padding-bottom: 6px;
-}
-.usserInfoColInner h1{
-    padding: 6px;
+.usserInfoColInner h1 {
+    padding: 6px 6px 4px 6px;
 
 }
 
-.UserAcCollection button{
+.UserAcCollection button {
     width: 100%;
     height: 42px;
     border-radius: 12px;
     background-color: #aed2f4;
     border: none;
     cursor: pointer;
+    border: 1px solid #000;
 
 }
-.PdS2Headrr{
+
+.PdS2Headrr {
     /* border: 1px solid #2d0de2; */
     text-align: center;
     width: 100%;
@@ -309,20 +346,22 @@ main{
     justify-content: center;
     gap: 14px;
 }
-.Sec2RghtserviceBar{
+
+.Sec2RghtserviceBar {
     padding: 4px;
     display: flex;
     justify-content: space-between;
     padding-right: 12px;
-    background-color: #c9e3f9 ;
-    
+    background-color: #c9e3f9;
+
 
 }
 
-.Sec2RghtserviceBar span{
+.Sec2RghtserviceBar span {
     padding-left: 12px;
 }
-.DisplayServices{
+
+.DisplayServices {
     text-align: center;
     padding: 8px;
     border-bottom: 1px solid #6a706c;
@@ -334,11 +373,13 @@ main{
     align-items: center;
     gap: 20px;
 }
-.DisplayServices span:nth-child(2){
+
+.DisplayServices span:nth-child(2) {
     font-size: 1.2rem;
     font-weight: 520;
 }
-.PriceShowFtbar{
+
+.PriceShowFtbar {
     display: flex;
     justify-content: space-between;
     padding: 6px 12px 6px 12px;
@@ -347,13 +388,15 @@ main{
 
     border-radius: 12px;
 }
-.UsrFlBOX{
+
+.UsrFlBOX {
     width: 100%;
-    height:70px;
+    height: 70px;
     /* border: 1px solid #000; */
     padding: 4px;
 }
-.UsrFlBOX #USerId{
+
+.UsrFlBOX #USerId {
     width: 100%;
     height: 2.6rem;
     padding: 6px;
@@ -362,8 +405,9 @@ main{
     border: none;
     border: 0.5px solid #c4bdbd;
 }
-.UsrFlBOXTw #UsrNidF2{
-    
+
+.UsrFlBOXTw #UsrNidF2 {
+
     width: 100%;
     height: 2.6rem;
     padding: 6px;
@@ -372,66 +416,74 @@ main{
     border: none;
     border: 0.5px solid #c4bdbd;
 }
-.UsrFlBOX .labelsUsr{
+
+.UsrFlBOX .labelsUsr {
     padding: 2px 2px 2px 2px;
     /* border: 1px solid #000; */
 }
-.UsrFlBOXTw .labelsUsrTw{
+
+.UsrFlBOXTw .labelsUsrTw {
     padding: 2px 2px 2px 2px;
     /* border: 1px solid #000; */
 }
-.UsrFlBOXTw{
+
+.UsrFlBOXTw {
     display: flex;
     width: 100%;
-    height:80px;
+    height: 80px;
     /* border: 1px solid #000; */
     gap: 2px;
 }
 
-.Usrflw_InputBox1,.Usrflw_InputBox2{
+.Usrflw_InputBox1,
+.Usrflw_InputBox2 {
     /* border: 1px solid #000; */
     width: 100%;
     height: auto;
     padding: 4px;
     display: flex;
     gap: 2px;
-    flex-direction: column  ;
-    
+    flex-direction: column;
+
 }
 
 
-.SecTwo_leftSec_ITEMshow{
+.SecTwo_leftSec_ITEMshow {
     width: 100%;
-    height: 450px;
-    border-width: 90%;
+    height: 400px;
     display: flex;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-bottom: 12px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+    padding-bottom: 8px;
+    border: 1px solid #000;
 }
-.hrbar, .hrbar2{
+
+.hrbar,
+.hrbar2 {
     text-align: center;
     width: 95%;
 }
-.secTwoLFtSecItmShowLISTBOX{
+
+.secTwoLFtSecItmShowLISTBOX {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border: 1px solid #c90b0b;
 }
-.secTwoLFtSecItmShowINNBOX{
+
+.secTwoLFtSecItmShowINNBOX {
     width: 100%;
+    border: 1px solid #0ba828;
     height: 20%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.servicesL{
+.servicesL {
     /* border: 1px solid #006e9d; */
     padding: 10px;
     width: 100%;
@@ -443,13 +495,18 @@ main{
     font-size: 0.9rem;
 
 }
-.servicesL img{
 
-    width: 22x;
+.servicesL img {
+
+    width: 22px;
     height: 22px;
     /* border: 1px solid #000; */
 }
-.servicesL span{
+.servicesL button > img{
+    width: 20px;
+    height: 20px;
+}
+.servicesL span {
     width: auto;
     border-radius: 12px;
     height: auto;
@@ -459,7 +516,8 @@ main{
     color: #0d5b84;
     /* border: 1px solid #000; */
 }
-.servicesL2{
+
+.servicesL2 {
     text-align: right;
     display: flex;
     /* border: 1px solid #8fde19; */
@@ -470,7 +528,8 @@ main{
     width: 40%;
     height: 100%;
 }
-.servicesL2 span{
+
+.servicesL2 span {
     border: 1px solid #0384b3;
     border-radius: 12px;
     width: auto;
@@ -478,24 +537,27 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
-    gap: 14px;
+    padding: 10px 14px 10px 14px;
+    gap: 2px;
     font-size: 0.8rem;
 }
 
-.servicesL button{
-    width: 20px;
-    height: 20px;
+.servicesL button {
+    width: 24px;
+    height: 22px;
     background: none;
     outline: none;
     border: none;
     cursor: pointer;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
-.popUp{
+
+.popUp {
     width: 100%;
-    height: 100%;
-    border: 1px solid #000;
+    height: auto;
+    padding: 2px;
+    padding-left: 8px;
+    font-size: 0.9rem;
 }
 
 /* @media screen and (min-width:1294px) {
