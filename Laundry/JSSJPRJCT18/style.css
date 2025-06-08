@@ -314,7 +314,7 @@ main {
     flex-direction: column;
     border-radius: 12px;
     justify-content: space-between;
-    padding: 10px 10px 12px 10px;
+    padding: 10px 10px 11px 10px;
 }
 
 
@@ -364,7 +364,7 @@ main {
 .DisplayServices {
     text-align: center;
     padding: 8px;
-    border-bottom: 1px solid #6a706c;
+        border-bottom: 1px solid #6a706c;
     border-radius: 4px;
     width: 100%;
     height: 100%;

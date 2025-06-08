@@ -9,7 +9,8 @@ Sbtn.addEventListener("click", () => {
 const input1Fld = document.getElementById("USerId");
 let DisplayItemAddcart = document.getElementById("DisplayItemAddcart");
 let UserAcCollection = document.querySelector('.UserAcCollection')
-const CartList = UserAcCollection.querySelector('ul'); 
+const CartList = UserAcCollection.querySelector('ul');
+
 let popup = document.createElement('span')
   popup.classList.add("popUp")
   popup.innerText='Add the items to the cart to Book'
@@ -19,10 +20,9 @@ let popup = document.createElement('span')
 input1Fld.addEventListener('click', () => {
 
     if(CartList){
-       DisplayItemAddcart.removeChild(DisplayItemAddcart.querySelector("img")) //remove image
-       DisplayItemAddcart.querySelectorAll("span").forEach(span =>{        
-       DisplayItemAddcart.removeChild(span)  
-      })
+      return
+   
+    
     }
     else{
 
@@ -31,8 +31,7 @@ input1Fld.addEventListener('click', () => {
       requestAnimationFrame(()=>{
       popup.style.transition='opacity 0.4s ease'
       UserAcCollection.style.transition='padding-Bottom 0.4s ease'
-
-      UserAcCollection.style.paddingBottom = '0px';
+      UserAcCollection.style.paddingBottom = '12px';
         popup.style.opacity='1' 
 
         
@@ -42,15 +41,30 @@ input1Fld.addEventListener('click', () => {
 });
 
 
-let Items = document.querySelectorAll('.secTwoLFtSecItmShowINNBOX p:nth-of-type(2)')
+let Items = document.querySelectorAll('.servicesL img')
 
+Items.forEach(Item => {
+  Item.addEventListener('click', () => {
+    if(UserAcCollection.contains(popup)){
+     
+      UserAcCollection.removeChild(popup)
+      // DisplayItemAddcart.removeChild(DisplayItemAddcart.querySelector("img")) //remove image
+      // DisplayItemAddcart.querySelectorAll("span").forEach(span =>{        
+      // DisplayItemAddcart.removeChild(span)})
+    
+     return true
+   
+    }
+    else{
 
-Items.forEach(Item=>{
+    console.log('dsd yyy')
+     
 
-    Item.addEventListener('click',()=>{
-      return console.log("typed")    
-    })})
+  }
+      
+  });
+});
+
     
 
 
-  
