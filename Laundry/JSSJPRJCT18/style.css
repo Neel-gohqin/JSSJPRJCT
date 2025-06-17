@@ -348,7 +348,7 @@ main {
 }
 
 .Sec2RghtserviceBar {
-    padding: 4px;
+    padding: 2px;
     display: flex;
     justify-content: space-between;
     padding-right: 12px;
@@ -555,7 +555,6 @@ main {
 .popUp {
     width: 100%;
     height: auto;
-    padding: 2px;
     padding-left: 8px;
     font-size: 0.9rem;
 }
@@ -570,3 +569,17 @@ main {
         height: 76vh;
     }
 } */
+
+ .CartList{
+        width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
+.ListLi_Service{
+    width: 100%;
+    border: 1px solid #000;
+    height: auto;
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+ }
