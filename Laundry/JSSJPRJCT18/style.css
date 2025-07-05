@@ -578,7 +578,7 @@ main {
 .ListLi_Service{
     width: 100%;
     border: 1px solid #000;
-    height: auto;
+    height: 24px;
     display: flex;
     padding: 2px;
     justify-content: space-between;

@@ -15,8 +15,7 @@
   popup.style.opacity = "0";
   UserAcCollection.style.paddingBottom = "12px";
 
-  let CartList = DisplayItemAddcart.querySelector("ul");
-  CartList = document.createElement("ul");
+
 
 
 
@@ -63,27 +62,34 @@
 
 
   // Select all service images
-  let Items = document.querySelectorAll(".servicesL img");
-
+  let Items = document.querySelectorAll(".services img");
+  let CartList = DisplayItemAddcart.querySelector("ul");
+  
   Items.forEach((item, index) => {
     item.addEventListener("click", () => {
       if (UserAcCollection.contains(popup)) {
         UserAcCollection.removeChild(popup);
         UserAcCollection.style.paddingBottom = "12px";
       }
-      document.querySelectorAll('.DisplayServices span, .DisplayServices img').forEach(el => el.remove());
-      
+      CartList = DisplayItemAddcart.querySelector("ul");
       if (!CartList) {
+        document.querySelectorAll('.DisplayServices span, .DisplayServices img').forEach(el => el.remove());
+        CartList = document.createElement("ul");
         CartList.classList.add("CartList");
         DisplayItemAddcart.appendChild(CartList);
       }
 
+        if(CartList.children.length>=6){
+          alert('You cant Add more Than 6 Items')
+          return;
+        }
         
       let selectedServices = ServicesList[index];
       let ListService = document.createElement("li");
-        ListService.innerHTML = `<span>${selectedServices.ServiceName} </span>  <span>${selectedServices.ServicePrice}</span>`;
-        ListService.classList.add("ListLi_Service")
+      ListService.classList.add("ListLi_Service")
+      ListService.innerHTML = `<span>${selectedServices.ServiceName} </span>  <span>${selectedServices.ServicePrice}</span>`;
         CartList.appendChild(ListService);
+      
     
       UserAcCollection.style.paddingBottom = "12px";
     });
