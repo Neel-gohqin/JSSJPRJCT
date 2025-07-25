@@ -118,9 +118,12 @@ ItemCurrent_Status.forEach((crrntSts, index) => {
       listItemsRemove.forEach((listItemsR) => {
         if (parseInt(listItemsR.getAttribute("data-index")) === itemIndexOn_Remove) {
           
-          PriceShowFtbar.innerText = `$${pc.toFixed(2)}`;
-
+          
           listItemsR.remove();
+           selectedServices = ServicesList[index];
+           TTprice = parseFloat(selectedServices.ServicePrice.replace("$", ""));
+          pc -= TTprice;
+          PriceShowFtbar.innerText = `$${pc.toFixed(2)}`;
         }
       });
 
