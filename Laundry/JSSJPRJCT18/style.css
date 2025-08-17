@@ -525,7 +525,7 @@ main {
 
 .servicesL2 span {
 
-    border: 1px solid #0384b3;
+    border: 1px solid #0384b3; 
     border-radius: 12px;
     width: 120px;
     height: auto;
@@ -555,8 +555,14 @@ main {
     width: 100%;
     height: auto;
     padding: 2px;
+    padding-bottom: 4px;
     padding-left: 8px;
     font-size: 0.8rem;
+    color: red;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 /* @media screen and (min-width:1294px) {
@@ -579,7 +585,7 @@ main {
     margin-left: 30px;
     width: auto;
     height: auto;
-    padding: 4px;
+    padding: 8px;
     padding-left: 32px;
 }
 
@@ -589,3 +595,7 @@ main {
     display: flex;
 justify-content: space-between;
  } 
+ .IGLOGO{
+    width: 16px;
+    height: 16px;
+ }

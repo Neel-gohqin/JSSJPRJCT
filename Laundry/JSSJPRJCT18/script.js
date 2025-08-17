@@ -11,6 +11,10 @@ let UserAcCollection = document.querySelector(".UserAcCollection");
 let CartList = DisplayItemAddcart.querySelector("ol"); //Selecting Ol List By default
 
 let popup = document.createElement("span");
+let iglo= document.createElement("img");
+iglo.classList.add("IGLOGO")
+iglo.src = "assets/icons8.png";
+
 popup.classList.add("popUp");
 popup.innerText = "Add the items to the cart to Book";
 popup.style.opacity = "0";
@@ -19,6 +23,7 @@ UserAcCollection.style.paddingBottom = "12px";
 input1Fld.addEventListener("click", () => {
   if (!DisplayItemAddcart.contains(CartList)) {
     if (!DisplayItemAddcart.contains(popup)) {
+      popup.appendChild(iglo);
       UserAcCollection.appendChild(popup);
 
       requestAnimationFrame(() => {
@@ -80,8 +85,8 @@ Items.forEach((item, index) => {
       DisplayItemAddcart.appendChild(CartList);
     }
 
-    if (CartList.children.length >= 6) {
-      alert("You cant Add more Than 6 Items");
+    if (CartList.children.length === 6) {
+      alert("You cant Add more Than 4 Items");
       return;
     }
 
@@ -109,7 +114,7 @@ ItemCurrent_Status.forEach((crrntSts, index) => {
   crrntSts.addEventListener("click", () => {
     if (crrntSts.src.includes("PLZuzzu.png")) {
       crrntSts.src = "assets/miNUZ.png";
-      adplzmz[index].style.color = "red";
+      adplzmz[index].style.color = "rgb(216, 81, 81)";
     } else {
       crrntSts.src = "assets/PLZuzzu.png";
       adplzmz[index].style.color = "#0d5b84";
