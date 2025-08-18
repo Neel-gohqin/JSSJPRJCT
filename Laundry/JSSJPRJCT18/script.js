@@ -12,7 +12,7 @@ let CartList = DisplayItemAddcart.querySelector("ol"); //Selecting Ol List By de
 
 let popup = document.createElement("span");
 let iglo= document.createElement("img");
-iglo.classList.add("IGLOGO")
+iglo.classList.add("IGLOGO");
 iglo.src = "assets/icons8.png";
 
 popup.classList.add("popUp");
