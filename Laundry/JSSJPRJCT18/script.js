@@ -27,7 +27,7 @@ input1Fld.addEventListener("click", () => {
       UserAcCollection.appendChild(popup);
 
       requestAnimationFrame(() => {
-        popup.style.transition = "opacity 0.6s ease";
+        popup.style.transition = "opacity 1s ease";
         UserAcCollection.style.paddingBottom = "0px";
         popup.style.opacity = "1";
       });
@@ -163,11 +163,11 @@ OdrBtn.addEventListener("click", () => {
   
   if (!DisplayItemAddcart.contains(popup)) {
     popup.innerText = "Email has been sent succesfully";
-    UserAcCollection.appendChild(popup);
     requestAnimationFrame(() => {
-      popup.style.transition = "opacity 0.6s ease";
+      popup.style.transition = "opacity 1s ease";
       UserAcCollection.style.paddingBottom = "0px";
       popup.style.opacity = "1";
+      UserAcCollection.appendChild(popup);
     });
   }
 
