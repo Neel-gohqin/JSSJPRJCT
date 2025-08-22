@@ -11,9 +11,9 @@ let UserAcCollection = document.querySelector(".UserAcCollection");
 let CartList = DisplayItemAddcart.querySelector("ol"); //Selecting Ol List By default
 
 let popup = document.createElement("span");
-let iglo= document.createElement("img");
-iglo.classList.add("IGLOGO");
-iglo.src = "assets/icons8.png";
+let iglogo= document.createElement("img");
+iglogo.classList.add("IGLOGO");
+iglogo.src = "assets/icons8.png";
 
 popup.classList.add("popUp");
 popup.innerText = "Add the items to the cart to Book";
@@ -23,7 +23,7 @@ UserAcCollection.style.paddingBottom = "12px";
 input1Fld.addEventListener("click", () => {
   if (!DisplayItemAddcart.contains(CartList)) {
     if (!DisplayItemAddcart.contains(popup)) {
-      popup.appendChild(iglo);
+      popup.appendChild(iglogo);
       UserAcCollection.appendChild(popup);
 
       requestAnimationFrame(() => {
@@ -170,4 +170,9 @@ OdrBtn.addEventListener("click", () => {
       popup.style.opacity = "1";
     });
   }
+
+  setTimeout(()=>{
+
+    window.location.reload()
+  },2200)
 });
