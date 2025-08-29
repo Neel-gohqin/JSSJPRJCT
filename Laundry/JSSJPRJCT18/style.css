@@ -211,7 +211,7 @@ main {
 
 .sectionTwo {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -587,3 +587,131 @@ main {
     width: 16px;
     height: 16px;
  }
+ .sectionThree{
+
+    
+     border: 1px solid black;
+ }
+ .secThreeInnner{
+    border: 1px solid black;
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .secThreeInnner span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 30px;
+
+ }
+ .SupportBoxes p:first-of-type{
+    font-size:0.8rem;
+    font-family: poppins;
+    font-weight: 600;
+ }
+  .SupportBoxes p:nth-of-type(2){
+    font-size:0.6rem;
+    width: 60%;
+    text-align: center;
+    font-family: poppins;
+    font-weight: 450;
+    color: #6a706c;
+    padding-top: 2px;
+ }
+ .secThreeInnner_LOWsec{
+    background-color: #308CD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24vh;
+}
+.secThree_ftrLeft{
+    width: 40%;
+    height: 14vh;
+    padding-left: 20px;
+    border: 1px solid black;
+}
+.secThree_ftrLeft h1{
+    width: 90%;
+    font-size: 2.2rem;
+    font-family: poppins;
+    color: #ebe5e5;
+}
+ .secThree_fyrRightt{
+    width: 45%;
+    height: 14vh;
+    border: 1px solid black;
+}
+.secThree_fyrRighttOw{
+    max-width:90%;
+    height: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 30px 30px;
+    gap: 8px;
+}
+.secThree_fyrRighttOw input{
+    font-size: 0.6rem;
+    outline: none;
+    font-family: poppins;
+    background-color: #509ddb;
+    color: white;
+    border: 0.5px solid rgb(109, 180, 238);
+    padding-left:4px;
+    width: 140px;
+    height: 32px;
+}
+.secThree_fyrRighttOw input::placeholder{
+    color: white;
+    font-size: 0.6rem;
+
+}
+.secThree_fyrRighttOw button{
+    cursor: pointer;
+    outline: none;
+    font-size: 0.7rem;
+    font-family: poppins;
+     width: 140px;
+    height: 32px;
+}
+footer{
+    border: 1px solid rgb(223, 5, 5);
+    width: 100%;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+}
+.FooterInnerr{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    border: 1px solid rgb(62, 230, 40);
+}
+.FooterInnerr span{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    border: 1px solid black;
+}
+.FooterInnerr span:nth-of-type(1) p:nth-of-type(1){
+    font-weight: 550;
+}
+.FooterInnerr span h1:nth-of-type(1){
+    padding-bottom: 16px;
+}
+.FooterInnerr span:nth-of-type(4) p{
+    display: flex;
+    padding: 6px;
+    gap: 14px;
+
+}
