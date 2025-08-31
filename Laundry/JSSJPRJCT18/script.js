@@ -1,7 +1,7 @@
 //BOOK NOW BUTTON
 let Sbtn = document.querySelector(".SeconeInner button");
 Sbtn.addEventListener("click", () => {
-  window.scrollTo({ top: 700, behavior: "smooth" });
+  window.scrollTo({ top: 680, behavior: "smooth" });
   // window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 });
 
@@ -164,7 +164,8 @@ OdrBtn.addEventListener("click", () => {
   if (!DisplayItemAddcart.contains(popup)) {
     popup.innerText = "Email has been sent succesfully";
     requestAnimationFrame(() => {
-      popup.style.transition = "opacity 1s ease";
+      popup.style.transition = "opacity 0.8s ease";
+      popup.style.color="green"
       UserAcCollection.style.paddingBottom = "0px";
       popup.style.opacity = "1";
       UserAcCollection.appendChild(popup);
@@ -173,6 +174,8 @@ OdrBtn.addEventListener("click", () => {
 
   setTimeout(()=>{
 
-    window.location.reload()
+  window.location.reload()
+      
+    
   },2200)
 });

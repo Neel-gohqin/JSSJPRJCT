@@ -87,7 +87,7 @@ main {
     display: flex;
     width: 100%;
     height: auto;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     justify-content: center;
     padding-top: 30px;
 
@@ -102,7 +102,7 @@ main {
     padding: 12px 50px 44px 50px;
     width: 50%;
     min-height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .leftSecF h1 {
@@ -159,7 +159,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .rightSecF img {
@@ -171,7 +171,7 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 102px;
     background-color: #308CD6;
 
 }
@@ -194,7 +194,7 @@ main {
     justify-content: space-around;
     align-items: center;
     padding-right: 50px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     font-family: poppins;
 }
 
@@ -216,7 +216,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding-bottom: 30px;
     background-color: #c5cdd5;
 
@@ -229,9 +229,7 @@ main {
     gap: 6px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
-
-
+    /* border: 1px solid #000; */
 }
 
 /* Main body section two LeftSec  */
@@ -245,7 +243,7 @@ main {
     /* border: 0.5px solid #474a46; */
     border-radius: 12px;
     background-color: rgb(234, 238, 243);
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .lowBox {
@@ -263,7 +261,7 @@ main {
 }
 
 .lowBox .headlinefttr {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 580;
     color: #0d5b84;
     /* border: 1px solid #000; */
@@ -278,7 +276,7 @@ main {
     flex-direction: column;
     row-gap: 8px;
     border-radius: 12px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background-color: transparent;
 
 }
@@ -558,7 +556,6 @@ main {
     padding-left: 8px;
     font-size: 0.8rem;
     color: red;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -587,15 +584,11 @@ main {
     width: 16px;
     height: 16px;
  }
- .sectionThree{
 
-    
-     border: 1px solid black;
- }
  .secThreeInnner{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-    height: 26vh;
+    height: 32vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -607,7 +600,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 30px;
 
  }
@@ -631,13 +624,13 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 24vh;
+    height: 25vh;
 }
 .secThree_ftrLeft{
     width: 40%;
-    height: 14vh;
+    height: 18;
     padding-left: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .secThree_ftrLeft h1{
     width: 90%;
@@ -647,16 +640,16 @@ main {
 }
  .secThree_fyrRightt{
     width: 45%;
-    height: 14vh;
-    border: 1px solid black;
+    height: 18vh;
+    /* border: 1px solid black; */
 }
 .secThree_fyrRighttOw{
     max-width:90%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
-    grid-template-columns: 140px 140px;
-    grid-template-rows: 30px 30px;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 40px 40px;
     gap: 8px;
 }
 .secThree_fyrRighttOw input{
@@ -667,26 +660,25 @@ main {
     color: white;
     border: 0.5px solid rgb(109, 180, 238);
     padding-left:4px;
-    width: 140px;
-    height: 32px;
+    width: 170px;
+    height: 40px;
 }
 .secThree_fyrRighttOw input::placeholder{
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
 }
 .secThree_fyrRighttOw button{
     cursor: pointer;
     outline: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: poppins;
-     width: 140px;
-    height: 32px;
+     width: 170px;
+    height: 40px;
 }
 footer{
-    border: 1px solid rgb(223, 5, 5);
     width: 100%;
-    height: 28vh;
+    height: 32vh;
     display: flex;
     justify-content: center;
 }
@@ -695,23 +687,31 @@ footer{
     width: 100%;
     height: 100%;
     justify-content: space-around;
-    border: 1px solid rgb(62, 230, 40);
+    padding: 20px;
 }
 .FooterInnerr span{
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
-    border: 1px solid black;
+    row-gap: 2px;
+    /* border: 1px solid black; */
+    height: 100%;
 }
 .FooterInnerr span:nth-of-type(1) p:nth-of-type(1){
-    font-weight: 550;
+    font-weight: bold;
+    font-size: 0.85rem;
 }
+.FooterInnerr span .p2{
+    font-size: 0.8rem;
+    color: rgb(96, 96, 96);
+    }
 .FooterInnerr span h1:nth-of-type(1){
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
 }
 .FooterInnerr span:nth-of-type(4) p{
     display: flex;
     padding: 6px;
-    gap: 14px;
+    gap: 10px;
 
 }
