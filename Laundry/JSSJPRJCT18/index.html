@@ -79,7 +79,6 @@
       </section>
 
       <!--Main Section Two -->
-
       <section class="sectionTwo">
         <div class="sectionTwoInner" id="sectionTwoInner">
           <!-- Section Two Leftsec-->
@@ -253,6 +252,7 @@
           </div>
 
           <!-- Section Two Rightsec-->
+          
           <div class="Sec2Right">
             <div class="PriceDsplaySec2">
               <div class="PdS2Headrr">
@@ -276,6 +276,7 @@
             </div>
 
             <div class="UserAcCollection">
+
               <div class="usserInfoColInner">
                 <h1>Book Now</h1>
 
@@ -287,6 +288,7 @@
                         type="text"
                         name="UsrNId"
                         id="USerId"
+			                  class='Name'
                         placeholder="Enter Your Fullname"
                         required
                       />
@@ -300,6 +302,7 @@
                         type="mail"
                         name="Mail"
                         id="UsrNidF2"
+			                  class='mail'
                         placeholder="Yomigo@Example.com"
                       />
                     </div>
@@ -312,6 +315,7 @@
                         type="text"
                         name="PhnNb"
                         id="UsrNidF2"
+			                  class='Phone'
                         placeholder="0000000000"
                       />
                     </div>
@@ -319,11 +323,14 @@
                 </div>
               </div>
 
-              <button id="Order_Button">Take Order</button>
+              <button id="Order_Button" type="submit" onclick="sendmail()">Take Order</button>
+              
             </div>
+            
           </div>
         </div>
       </section>
+
 
       <!--Main Section Two -->
       <section class="sectionThree">
@@ -402,6 +409,7 @@
         </div>
       </section>
 
+
       <footer>
         <div class="FooterInnerr">
 
@@ -458,7 +466,7 @@
               Follow Us
             </h1>
               <p>
-                <img src="assets/facebook.png" alt="img" width="22" height="22">
+                <img src="assets/facebook.png" alt="img" width="22" height="22" style="cursor: pointer;">
                 <img src="assets/instagram.png" alt="img" width="22" height="22"  style="cursor: pointer;">
                 <img src="assets/linkedin-logo.png" alt="img" width="24" height="24"  style="cursor: pointer;">
               </p>
@@ -468,5 +476,6 @@
       </footer>
     </main>
     <script src="script.js"></script>
+    <script src="email.js"></script>
   </body>
 </html>

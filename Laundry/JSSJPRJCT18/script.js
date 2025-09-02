@@ -1,7 +1,7 @@
 //BOOK NOW BUTTON
 let Sbtn = document.querySelector(".SeconeInner button");
 Sbtn.addEventListener("click", () => {
-  window.scrollTo({ top: 680, behavior: "smooth" });
+  window.scrollTo({ top: 624, behavior: "smooth" });
   // window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 });
 

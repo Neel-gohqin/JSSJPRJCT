@@ -72,15 +72,14 @@ a {
 
 main {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 /* Main body Section One */
 
 .sectionOne {
     width: 100%;
-    height: 100vh;
-
+    height: 90vh;
 }
 
 .SeconeInner {
@@ -89,7 +88,7 @@ main {
     height: auto;
     /* border: 1px solid #000; */
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 42px;
 
 }
 
@@ -171,7 +170,7 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 102px;
+    height: 122px;
     background-color: #308CD6;
 
 }
@@ -211,12 +210,11 @@ main {
 
 .sectionTwo {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    /* border: 1px solid #000; */
     padding-bottom: 30px;
     background-color: #c5cdd5;
 
@@ -279,6 +277,16 @@ main {
     /* border: 1px solid #000; */
     background-color: transparent;
 
+}
+.sectionTwo form{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    border-radius: 12px;
+    /* border: 1px solid #000; */
+    background-color: transparent;
 }
 
 .sec2LfHeadb {
