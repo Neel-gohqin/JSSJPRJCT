@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MERN TASK 18</title>
     <link rel="stylesheet" href="style.css" />
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "gPjXSQc1Q7d8c4Vcv",
+      });
+   })();
+</script>
+
+
+
+    
   </head>
   <body>
     <!-- Nav Bar -->
@@ -28,9 +43,10 @@
       </nav>
     </header>
     <main>
-      <!--Main Section one -->
+      <!--Main Section One -->
       <section class="sectionOne">
         <section class="SeconeInner">
+
           <!--SectionOne  LeftSec-->
           <div class="leftSecF">
             <h1>
@@ -46,14 +62,14 @@
             <button>Book a Service Today</button>
           </div>
 
-          <!-- SectionOne  Righr Sec-->
+          <!-- SectionOne  RighrSec-->
           <div class="rightSecF">
             <img src="assets/wo.png" alt="phoimg" width="150" height="150" />
           </div>
         </section>
 
-        <!-- Sectionone FootER -->
 
+        <!-- Sectionone FootER -->
         <div class="showcase">
           <div class="showHeader">
             <h1>Our Achievements</h1>
@@ -78,6 +94,8 @@
         </div>
       </section>
 
+
+      
       <!--Main Section Two -->
       <section class="sectionTwo">
         <div class="sectionTwoInner" id="sectionTwoInner">
@@ -275,7 +293,9 @@
               </div>
             </div>
 
+
             <div class="UserAcCollection">
+              <form id="contact-form" class="UserAcCollectionForm">
 
               <div class="usserInfoColInner">
                 <h1>Book Now</h1>
@@ -302,7 +322,7 @@
                         type="mail"
                         name="Mail"
                         id="UsrNidF2"
-			                  class='mail'
+			                  class='Mail'
                         placeholder="Yomigo@Example.com"
                       />
                     </div>
@@ -323,7 +343,8 @@
                 </div>
               </div>
 
-              <button id="Order_Button" type="submit" onclick="sendmail()">Take Order</button>
+              <button id="Order_Button" type="button" onclick="sendmail()">Take Order</button>
+              </form>
               
             </div>
             
