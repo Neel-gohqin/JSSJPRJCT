@@ -210,7 +210,7 @@ OdrBtn.addEventListener("click", () => {
 
   setTimeout(()=>{
 
-  // window.location.reload()
+  window.location.reload()
       
     
   },2200)
