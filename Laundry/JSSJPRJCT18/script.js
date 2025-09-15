@@ -1,15 +1,21 @@
 //BOOK NOW BUTTON
 let Sbtn = document.querySelector(".SeconeInner button");
 Sbtn.addEventListener("click", () => {
-  window.scrollTo({ top: 590, behavior: "smooth" });
+  window.scrollTo({ top:590, behavior: "smooth" });
   // window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 });
 
-const input1Fld = document.getElementById("USerId");
+const input1Fld = document.querySelector(".USerId");
 let DisplayItemAddcart = document.getElementById("DisplayItemAddcart");
 let UserAcCollection = document.querySelector(".UserAcCollection");
-let CartList = DisplayItemAddcart.querySelector("ol"); //Selecting Ol List By default
 
+
+let Sec2Right= document.querySelector('.Sec2Right')
+let Sec2Left = document.querySelector('.Sec2Left')
+Sec2Right.style.height='90vh'
+Sec2Left.style.height='90vh'
+
+let CartList = DisplayItemAddcart.querySelector("ol"); //Selecting Ol List By default
 let popup = document.createElement("span");
 let iglogo= document.createElement("img");
 iglogo.classList.add("IGLOGO");
@@ -18,22 +24,30 @@ iglogo.src = "assets/icons8.png";
 popup.classList.add("popUp");
 popup.innerText = "Add the items to the cart to Book";
 popup.style.opacity = "0";
-UserAcCollection.style.paddingBottom = "12px";
 
-input1Fld.addEventListener("click", () => {
-  if (!DisplayItemAddcart.contains(CartList)) {
-    if (!DisplayItemAddcart.contains(popup)) {
-      popup.appendChild(iglogo);
-      UserAcCollection.appendChild(popup);
+// const fnpop = ()=>{
+  // }
+  input1Fld.addEventListener("click", () => {
+    if (!DisplayItemAddcart.contains(CartList)) {
+      if (!DisplayItemAddcart.contains(popup)) {
+        popup.appendChild(iglogo);
+        UserAcCollection.appendChild(popup);
+        
+        requestAnimationFrame(() => {
+          Sec2Right.style.transition='height 0.4s ease'
+          Sec2Right.style.height='92vh'
+          Sec2Left.style.transition='height 0.4s ease'
+          Sec2Left.style.height='92vh'
+          popup.style.transition = "opacity 0.4s ease";
+          popup.style.opacity = "1";
+          UserAcCollection.style.paddingBottom = "2px";
 
-      requestAnimationFrame(() => {
-        popup.style.transition = "opacity 1s ease";
-        UserAcCollection.style.paddingBottom = "0px";
-        popup.style.opacity = "1";
+          
       });
     }
   }
 });
+
 
 let ServicesList = [
   {
@@ -71,8 +85,19 @@ let pc = 0;
 Items.forEach((item, index) => {
   item.addEventListener("click", () => {
     if (UserAcCollection.contains(popup)) {
+
+      requestAnimationFrame(()=>{
+
+        popup.style.transition = "opacity 0.4s ease";
+        popup.style.opacity = "0";
+        Sec2Right.style.transition='height 0.4s ease'
+        Sec2Right.style.height='90vh'
+        Sec2Left.style.transition='height 0.4s ease'
+        Sec2Left.style.height='90vh'
+        popup.style.transition = "opacity 0.4s ease";
+        popup.style.opacity = "1";
+      })
       UserAcCollection.removeChild(popup);
-      UserAcCollection.style.paddingBottom = "12px";
     }
 
     CartList = DisplayItemAddcart.querySelector("ol");
@@ -102,7 +127,6 @@ Items.forEach((item, index) => {
     ListService.innerHTML = `<div><span>${selectedServices.ServiceName} </span>  <span>${selectedServices.ServicePrice}</span></div>`;
     CartList.appendChild(ListService); //appending the list in Ol
 
-    UserAcCollection.style.paddingBottom = "12px";
   });
 });
 
@@ -148,7 +172,7 @@ ItemCurrent_Status.forEach((crrntSts, index) => {
 });
 
 let OdrBtn = document.getElementById("Order_Button");
-let UsrNidput = document.getElementById("UsrNidF2");
+let UsrNidput = document.querySelector(".UsrNidF2");
 
 OdrBtn.addEventListener("click", () => {
   if (UsrNidput.value.trim() === "") {
@@ -163,19 +187,37 @@ OdrBtn.addEventListener("click", () => {
   
   if (!DisplayItemAddcart.contains(popup)) {
     popup.innerText = "Email has been sent succesfully";
+    UserAcCollection.style.paddingBottom = "2px";
+    popup.style.opacity = "0";
+    UserAcCollection.appendChild(popup);
+
     requestAnimationFrame(() => {
-      popup.style.transition = "opacity 0.8s ease";
       popup.style.color="green"
-      UserAcCollection.style.paddingBottom = "0px";
+      popup.style.transition = "opacity 0.4s ease";
       popup.style.opacity = "1";
-      UserAcCollection.appendChild(popup);
+      UserAcCollection.style.paddingBottom = "4px";
+       Sec2Right.style.transition='height 0.4s ease'
+      Sec2Right.style.height='92vh'
+        Sec2Left.style.transition='height 0.4s ease'
+        Sec2Left.style.height='92vh'
+        popup.style.transition = "opacity 0.4s ease";
+        popup.style.opacity = "1";
+        UserAcCollection.style.paddingBottom = "2px";
     });
   }
+    
+
 
   setTimeout(()=>{
 
-  window.location.reload()
+  // window.location.reload()
       
     
   },2200)
 });
+
+
+
+
+
+
