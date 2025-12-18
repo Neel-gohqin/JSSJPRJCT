@@ -25,8 +25,8 @@ popup.classList.add("popUp");
 popup.innerText = "Add the items to the cart to Book";
 popup.style.opacity = "0";
 
-// const fnpop = ()=>{
-  // }
+
+//clicking Input Field 
   input1Fld.addEventListener("click", () => {
     if (!DisplayItemAddcart.contains(CartList)) {
       if (!DisplayItemAddcart.contains(popup)) {
@@ -48,6 +48,7 @@ popup.style.opacity = "0";
   }
 });
 
+//services
 
 let ServicesList = [
   {
@@ -82,6 +83,8 @@ let PriceShowFtbar = document.querySelector(".PriceShowFtbar .Pricetag");
 PriceShowFtbar.innerText = "$0.00";
 let pc = 0;
 
+
+
 Items.forEach((item, index) => {
   item.addEventListener("click", () => {
     if (UserAcCollection.contains(popup)) {
@@ -102,15 +105,13 @@ Items.forEach((item, index) => {
 
     CartList = DisplayItemAddcart.querySelector("ol");
     if (!CartList) {
-      document
-        .querySelectorAll(".DisplayServices span, .DisplayServices img")
-        .forEach((el) => el.remove());
+      document.querySelectorAll(".DisplayServices span, .DisplayServices img").forEach((el) => el.remove());
       CartList = document.createElement("ol");
       CartList.classList.add("CartList");
       DisplayItemAddcart.appendChild(CartList);
     }
 
-    if (CartList.children.length === 6) {
+    if (CartList.children.length === 5) {
       alert("You cant Add more Than 4 Items");
       return;
     }
@@ -130,6 +131,9 @@ Items.forEach((item, index) => {
   });
 });
 
+
+
+
 // let itemStatus = document.querySelector('.services span')
 let ItemCurrent_Status = document.querySelectorAll(".btnPlz img");
 let adplzmz = document.querySelectorAll(".services span");
@@ -142,11 +146,12 @@ ItemCurrent_Status.forEach((crrntSts, index) => {
     } else {
       crrntSts.src = "assets/PLZuzzu.png";
       adplzmz[index].style.color = "#0d5b84";
-      const itemIndexOn_Remove = index;
+      const itemIndexOn_Remove = i ndex;
       const listItemsRemove = document.querySelectorAll("li");
 
 
       listItemsRemove.forEach((listItemsR) => {
+
         if (parseInt(listItemsR.getAttribute("data-index")) === itemIndexOn_Remove) {
           listItemsR.remove();
           selectedServices = ServicesList[index];
@@ -196,13 +201,13 @@ OdrBtn.addEventListener("click", () => {
       popup.style.transition = "opacity 0.4s ease";
       popup.style.opacity = "1";
       UserAcCollection.style.paddingBottom = "4px";
-       Sec2Right.style.transition='height 0.4s ease'
+      Sec2Right.style.transition='height 0.4s ease'
       Sec2Right.style.height='92vh'
-        Sec2Left.style.transition='height 0.4s ease'
-        Sec2Left.style.height='92vh'
-        popup.style.transition = "opacity 0.4s ease";
-        popup.style.opacity = "1";
-        UserAcCollection.style.paddingBottom = "2px";
+      Sec2Left.style.transition='height 0.4s ease'
+      Sec2Left.style.height='92vh'
+      popup.style.transition = "opacity 0.4s ease";
+      popup.style.opacity = "1";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       UserAcCollection.style.paddingBottom = "2px";
     });
   }
     
